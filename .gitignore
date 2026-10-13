@@ -1,0 +1,46 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python / editor / runtime output
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.idea/
+.vscode/
+*.log
+bot_run.txt
+workspace/
+image_show/
+resource/
+demo_output/
+
+# Local market data is not distributed
+*.db
+*.db-*
+*.sqlite*
+*.xlsx
+*.csv
+
+# Local historical prototypes; app.py is the published entry point
+assistant_stock_bot-*.py
+assistant_ticket_bot-*.py
+stock_query_assistant.py
+get_stock_data*.py
+import_to_sqlite.py
+append_to_sqlite.py
+check_db.py
+run_query.py
+test_boll_detection.py
+test_date_fix*.py
+verify_stock_service.py
+create_table.sql
+ChatBI-SqlAgent说明.md
+rag_cheat_sheet.md
+rag_plan.md
+.publish_work/

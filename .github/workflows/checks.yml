@@ -1,0 +1,21 @@
+name: Python checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - name: Install data-test dependencies
+        run: pip install numpy==1.26.4 pandas==2.0.3 python-dotenv==1.2.2
+      - name: Compile application
+        run: python -m compileall -q app.py db.py prepare_data.py demo.py tests
+      - name: Check demo data and read-only database access
+        run: python -m unittest discover -s tests -v
