@@ -2,6 +2,8 @@
 
 # ChatBI · 股票数据分析助手
 
+[简体中文](README.md) | [English](README.en.md)
+
 **用自然语言查询数据，让分析结果以表格和图表呈现。**
 
 Natural-language analytics · SQL Agent · Tool Calling · Data Visualization
