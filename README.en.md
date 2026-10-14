@@ -18,13 +18,34 @@ Natural-language analytics · SQL Agent · Tool Calling · Data Visualization
 
 </div>
 
+## Recorded demo
+
+**01:41** · Play inline or use the player's fullscreen control.
+
+Ask for closing-price trends, Bollinger Band detection and ARIMA analysis; inspect tool calls, tables and charts in the conversation.
+
+https://github.com/user-attachments/assets/2df7c68e-9bf1-4629-87d3-c4bde9e53164
+
+**Approximate chapters:** `00:00` Natural-language query · `00:35` Bollinger Bands · `01:12` ARIMA analysis
+
+<details>
+<summary>Expand a screenshot from the recording</summary>
+
+![ChatBI Stock Assistant — Recorded demo](https://raw.githubusercontent.com/SimonLecake/ai-portfolio/main/assets/demos/chatbi.jpg)
+
+Captured from the author-provided recording. The application interface is in Chinese.
+
+</details>
+
+The recording uses the local data and interface available when recorded, separately from the fixed-seed synthetic charts below. Its data provenance and forecast performance are not independently verified here. It is not investment advice or an accuracy evaluation.
+
 ## Overview
 
 Business questions start in natural language, but answering them often involves writing SQL, preparing data, calculating metrics, and building charts. ChatBI connects these steps through a conversational interface: the user asks a question, an agent selects a tool, and the database and analysis code produce results that can be inspected as tables and charts.
 
 The project uses historical daily prices for Chinese A-share stocks to explore how **LLMs, structured data, and analytical tools** can work together. It is a runnable portfolio prototype demonstrating natural-language data access, agent tool orchestration, and an integrated analytics workflow.
 
-> **About the data:** This repository does not distribute the developer's local market database. All charts in this README use **synthetic data** generated with a fixed random seed; they do not represent actual stock performance. Company names demonstrate entity mapping only. The conversational interface requires your own model API key.
+> **About the data:** This repository does not distribute the developer's local market database. The three static tool charts in the Demo section use **synthetic data** generated with a fixed random seed; the recorded demo and its screenshot are described separately. Those synthetic charts do not represent actual stock performance. Company names demonstrate entity mapping only. The conversational interface requires your own model API key.
 
 ## Highlights
 
